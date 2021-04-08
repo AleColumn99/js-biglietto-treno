@@ -18,4 +18,4 @@ else{
   finalPrice = firstPrice;
 }
 console.log(finalPrice);
-document.getElementById('prezzo').innerHTML = "Secondo i nostri calcoli, devi pagare " + Math.round((finalPrice + Number.EPSILON) * 100) / 100 + "€";
+document.getElementById('prezzo').innerHTML = "Secondo i nostri calcoli, devi pagare " + finalPrice.toFixed(2) + "€";
